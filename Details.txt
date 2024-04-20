@@ -1,0 +1,49 @@
+Topics:
+
+  1. Working with Forms & basic data processing in reactjs
+    Please refer src/Profile.jsx for form handling using useState
+
+    Next Session: We will use Formik Package
+  
+  2. ref in react
+
+      useRef() --> hook used to access the DOM element
+
+      ref.current === e.target ( very similar ) 
+
+      **ref.current/e.target cannot be used to change/alter the contents of the DOM / DOM**
+      should be used only for actions on the DOM Elements of application,
+
+      1. Scrolling 
+      2. Sliding
+      3. Play an audio
+      4. Stop an audio
+      5. Resetting a form
+
+      ** Ref should not be used to alter the DOM, it should only be used to do actions like above **
+
+      https://react.dev/reference/react/useRef
+
+      Legacy One:
+      
+        createRef( creates a new reference everytime ) --> does the same thing as useRef but sometimes loses the reference if the component or the jsx is re-rendering
+
+      always try to useRef hook
+  
+  3. useReducer
+
+      **reducer** is single function which can do multiple things using a set of instructions
+
+      Handling Multiple different state values with single function
+
+      Advanced version of useState:
+
+        it can be used when we change the same state with more than three actions
+
+Next Session:
+
+  4. Game Development tictactoe:
+
+      3 x 3 --> tictactoe
+  
+  5. Async Operations
